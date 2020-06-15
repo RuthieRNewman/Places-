@@ -1,22 +1,30 @@
 $(document).ready(function() {
-  $("h3").click(function() {
+  
+  $("h3.japan").click(function() {
+   $("ul.japan").show();
   $("ul.japan").append("<li>" + Japan.dateOfTravel + "</li>");
   $("ul.japan").append("<li>" + Japan.season + "</li>");
   $("ul.japan").append("<li>" + Japan.landmarks + "</li>");
   $("ul.japan").append("<li>" + Japan.notes + "</li>");
-    console.log(Japan.landmarks);
+  });
+  
+    $("h3.israel").click(function(){
+    $("ul.israel").show();
   $("ul.israel").append("<li>" +  Israel.dateOfTravel + "</li>");
   $("ul.israel").append("<li>" + Israel.season + "</li>");
   $("ul.israel").append("<li>" + Israel.landmarks + "</li>");
   $("ul.israel").append("<li>" + Israel.notes + "</li>"); 
+    });
 
+  $("h3.peru").click(function(){
+  $("ul.peru").show();
   $("ul.peru").append("<li>" +  Peru.dateOfTravel + "</li>");
   $("ul.peru").append("<li>" + Peru.season + "</li>");
   $("ul.peru").append("<li>" + Peru.landmarks + "</li>");
   $("ul.peru").append("<li>" + Peru.notes + "</li>"); 
-
   });
 });
+
 
 //business logic
 //constructor for destinations
